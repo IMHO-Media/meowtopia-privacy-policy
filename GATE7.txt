@@ -1,0 +1,60 @@
+MEOWTOPIA PRIVACY POLICY — GATE 7: PRODUCT-SPECIFIC BEHAVIORAL TEST
+====================================================================
+This is a static HTML privacy policy page for the Meowtopia Android game.
+It has a single index.html that must load, display the correct title and
+all required policy sections, and serve all external links correctly.
+Verification must center on content accuracy and link validity.
+
+This file is read by RELEASE_GATE.txt Gate 7.
+Every check below must PASS before this page can be called done.
+
+====================================================================
+SECTION A: NAVIGATION — TOP-LEVEL ROUTES
+====================================================================
+
+  [ ] / (index.html) opens               → h1 "Privacy Policy for Meowtopia" visible
+  [ ] /index.html direct access          → same content as /
+  [ ] /index.html on mobile 375px        → all headings visible, no horizontal overflow
+  [ ] Page title in <title> tag          → "Meowtopia Privacy Policy"
+
+====================================================================
+SECTION B: PAGE CONTENT — ALL REQUIRED POLICY SECTIONS
+====================================================================
+
+  [ ] Section 1 — "Information We Collect" heading visible
+  [ ] Section 2 — "How We Use Your Information" heading visible
+  [ ] Section 3 — "Sharing Your Information" heading visible
+  [ ] Section 4 — "Third-Party Services" heading visible with Google Play and Unity links
+  [ ] Section 5 — "Children's Privacy" heading visible
+  [ ] Section 6 — "Data Security" heading visible
+  [ ] Section 7 — "Changes to This Privacy Policy" heading visible
+  [ ] Section 8 — "Contact Us" heading visible
+  [ ] "Last updated" date visible in the page
+  [ ] No-PII statement: "We do not collect personally identifiable information (PII)" visible
+  [ ] No-sell statement: "We do not sell or rent data" visible
+
+====================================================================
+SECTION C: EXTERNAL LINKS
+====================================================================
+
+  [ ] Google Play Services link present → href contains "policies.google.com/privacy"
+  [ ] Unity Analytics link present → href contains "unity.com/legal/privacy-policy"
+  [ ] All links open with target="_blank"
+
+====================================================================
+SECTION D: THE MANDATORY PERSISTENCE TEST
+====================================================================
+
+  [ ] Page loads at http://localhost:PORT/
+  [ ] Hard refresh (Ctrl+R) → page still shows all content
+  [ ] Navigate directly to /index.html → same content as /
+  [ ] Page renders without any JavaScript errors in console
+
+====================================================================
+WHAT CLAUDE IS NOT ALLOWED TO SUBSTITUTE FOR THIS TEST
+====================================================================
+
+  - "HTML is valid" → NOT A PRODUCT TEST
+  - "file exists on disk" → NOT A PRODUCT TEST
+  - "HTTP 200 returned" → NOT A PRODUCT TEST
+  - Only the full browser content verification above counts as PASS.
